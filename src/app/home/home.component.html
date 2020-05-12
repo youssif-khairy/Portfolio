@@ -1,0 +1,35 @@
+<div class="container">
+    <div class="row no-gutters about" id="about">
+        <div class="col-md-6">
+            <h1 class="primary-color h1--about" >Hey, I'm youssif</h1>
+            <p mat-body-strong class="accent-color paragraph--about">MEAN Stack and Cross-Platform developer living in Cairo,Egypt.</p>
+        </div>
+        <div class="col-md-6">
+            <img src="../../assets/me.jpg" alt="My Photo" class="img-fluid rounded personal-image--about d-block mx-auto">
+            
+        </div>
+    </div>
+    <div class="row no-gutters">
+        <div class="col-md-12">
+            <hr><h3 class="mat-display-1 primary-color paragraph--about">Some Projects</h3>
+        </div>
+    </div>
+    <div class="row no-gutters proj-section" id="projects">
+        <div class="col-md-4 col--proj-section"  *ngFor="let project of projects; let i = index">
+            <button mat-button class="btn--proj-section" >
+                <div class="card--proj-section" >
+                    <a routerLink="/project/{{i}}" class="accent-color">
+                        <img class="img-fluid img--proj-section" src="../../assets/{{project.image[0]}}" alt="Project Image">
+                        <h5 class="proj-name--proj-section">{{project.name}} </h5>
+                    </a>
+                </div>
+            </button>
+                    
+        </div>
+    </div>
+    <div class="row no-gutters">
+        <div class="col-md-12">
+            <hr>
+        </div>
+    </div>
+</div>

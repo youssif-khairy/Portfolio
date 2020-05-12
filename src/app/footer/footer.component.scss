@@ -1,0 +1,30 @@
+h3{
+    text-align: center;
+}
+form{
+    display: flex; 
+    flex-direction: column;
+    .form-group-element{
+        display: flex;
+         flex-direction: row;
+         label{
+            width: 20%;
+            font-size: 15px;
+         }
+         input,textarea{
+            width: 80%;
+         }
+    }
+    button{
+        width: 15%;
+        align-self: center;
+    }
+}
+@media screen and (max-width: 576px) {
+    form{
+        .form-group-element{
+        display: flex;
+        flex-direction: column;
+    }
+    }
+}

@@ -1,0 +1,37 @@
+@import '~@angular/material/theming';
+
+// always include only once per project
+@include mat-core();
+
+@mixin main-theme($theme) {
+  $primary: map-get($theme, primary);
+  $accent: map-get($theme, accent);
+  
+  
+
+  .primary-color{
+    color: mat-color($primary);
+  }
+  .accent-color{
+    color: mat-color($accent);
+  }
+  
+}
+
+
+// import our custom theme
+@import 'app-theme.scss';
+@import 'app-dark-theme.scss';
+
+// specify theme class eg: <body class="my-theme"> ... </body>
+  // use our theme with angular-material-theme mixin
+//@include angular-material-theme($my-theme);
+@include angular-material-theme($my-dark-theme);
+@include main-theme($my-dark-theme);
+
+
+.my-dark-theme { 
+  @include angular-material-theme($my-theme);
+  @include main-theme($my-theme);
+}
+  

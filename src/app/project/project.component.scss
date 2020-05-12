@@ -1,0 +1,45 @@
+.project{
+    padding: 5vh 1vw;
+}
+.header--font{
+    font-size: 50px;
+}
+.paragraph--font{
+    font-size: 40px;
+    line-height: 1;
+}
+@media (max-width:200px) {
+    .header--font{
+        font-size: 5px;
+    }
+    .paragraph--font{
+        font-size: 10px;
+    }
+}
+@media (max-width:767px) {
+    .header--font{
+        font-size: 30px;
+    }
+    .paragraph--font{
+        font-size: 20px;
+    }    
+  }
+  
+  @media (min-width:768px) {
+    .header--font{
+        font-size: 40px;
+    }
+    .paragraph--font{
+        font-size: 30px;
+    }
+  }
+  
+  @media (min-width:992px) {
+    .header--font{
+        font-size: 50px;
+    }
+    .paragraph--font{
+        font-size: 40px;
+    }
+  }
+  

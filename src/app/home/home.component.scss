@@ -1,0 +1,73 @@
+a{
+    &:hover{
+        text-decoration: none;
+    }
+}
+.about{
+    padding: 5vh 1vw;
+}
+.personal-image--about{
+    height: 70%;
+    width: 50%;
+}
+.h1--about{
+    font-size: 50px;
+    margin-bottom: 15%;
+}
+.paragraph--about{
+    font-size: 40px;
+    line-height: 1;
+}
+.proj-section{
+    justify-content: center;
+}
+.col--proj-section{
+    text-align-last: center;
+     margin-bottom: 2vh;
+}
+.btn--proj-section{
+    width: 100%;
+}
+.card--proj-section{
+    height: 300px;
+}
+.img--proj-section{
+    height: 90%;
+}
+.proj-name--proj-section{
+    font-size: 20px;
+}
+@media (max-width:200px){
+    .proj-name--proj-section{
+        font-size: 10px;
+    }
+}
+@media (max-width:767px) {
+    .h1--about{
+        font-size: 30px;
+    }
+    .paragraph--about{
+        font-size: 20px;
+    }
+    
+    
+  }
+  
+  @media (min-width:768px) {
+    .h1--about{
+        font-size: 40px;
+    }
+    .paragraph--about{
+        font-size: 30px;
+    }
+  }
+  
+  @media (min-width:992px) {
+    .h1--about{
+        font-size: 50px;
+    }
+    .paragraph--about{
+        font-size: 40px;
+    }
+  }
+  
